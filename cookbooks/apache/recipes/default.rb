@@ -7,11 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
-if node["platform"] == "ubuntu" 
-	execute "apt-get update -y" do
-	end
+#if node["platform"] == "ubuntu" 
+#	execute "apt-get update -y" do
+#	end
 
-end
+#end
 
 
 package "apache2" do
@@ -30,10 +30,8 @@ end
 
 if node["platform"] == "ubuntu"
 	template_location = "/etc/apache2/sites-enabled/#{sitename}.conf"
-elseif node["platform"] == "centos"
+elsif node["platform"] == "centos"
 	template_location = "/etc/httpd/conf.d/#{sitename}.conf"
-
-
 end
 
 template template_location do
