@@ -1,7 +1,5 @@
 {
 "id":"wheel",
-"gid":2005,
-"members": ["admin"]
-
-
+"gid":3005,
+"members":["admin","user"]
 }
