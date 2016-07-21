@@ -1,0 +1,36 @@
+	location /yahoo/ {
+	proxy_pass https://www.yahoo.com/;
+	}
+
+
+	location /turbotax/ {
+	proxy_pass https://turbotax.intuit.com/;
+	}
+
+
+        location /intuit/ {
+        proxy_pass http://www.intuit.com/;
+        }
+
+
+        location /mytt/ {
+        proxy_pass https://myturbotax.intuit.com/;
+        }
+
+
+        location /ttlc/ {
+        proxy_pass https://ttlc.intuit.com/;
+        }
+
+        location /compare/ {
+        proxy_pass https://turbotax.intuit.com/personal-taxes/compare/online/;
+        }
+
+        location /handlebars/ {
+        proxy_pass https://turbotax.intuit.com/handlebars/;
+        }
+
+        location /cache/ {
+        proxy_pass https://turbotax.intuit.com/cache/;
+        }
+
